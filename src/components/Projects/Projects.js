@@ -2,18 +2,19 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
 import NavBar from "../Navbar";
+import todolist from "../../Assets/Projects/todolist_.png";
+import nof from "../../Assets/Projects/NOF_.png";
+import BookESell from "../../Assets/Projects/BookEsell.png";
+import carEvol from "../../Assets/Projects/car-evolution.png";
+import real_estate from "../../Assets/Projects/real-estate.png";
+import ScrollToTop from "../ScrollToTop/ScrollToTop";
 
 function Projects() {
   return (
     <>
       <NavBar />
+      <ScrollToTop />
       <Container fluid className="project-section">
         <Particle />
         <Container>
@@ -26,18 +27,7 @@ function Projects() {
           <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
             <Col md={4} className="project-card">
               <ProjectCard
-                // imgPath={chatify}
-                isBlog={false}
-                title="todo list"
-                description="Todo list which includes tasks to be added, remove and update. also can search tasks list."
-                ghLink="https://github.com/DharmikVaja/react-todo-list"
-                demoLink=""
-              />
-            </Col>
-
-            <Col md={4} className="project-card">
-              <ProjectCard
-                // imgPath={bitsOfCode}
+                imgPath={nof}
                 isBlog={false}
                 title="National Olympiad foundation website"
                 description="The project is based on the olympiad exam held nationally, where student can create account, login and get access to buy books and can give the demo test for scoring good marks in upcoming test exams"
@@ -48,7 +38,7 @@ function Projects() {
 
             <Col md={4} className="project-card">
               <ProjectCard
-                // imgPath={editor}
+                imgPath={BookESell}
                 isBlog={false}
                 title="BookESell website"
                 description="Online books selling website created with different categories of logging in as buyer, seller and admin. who have rights to upload, buy or sell the books accordingly, books details finds and updates are possible here."
@@ -59,7 +49,7 @@ function Projects() {
 
             <Col md={4} className="project-card">
               <ProjectCard
-                // imgPath={leaf}
+                imgPath={carEvol}
                 isBlog={false}
                 title="Car-Evolution"
                 description="Car rental website ui showcasing the power and versatility of modern web technologies, is an innovative project aimed at revolutionizing the car rental industry, the project is as a learning initiative in UI design with ReactJS,"
@@ -67,17 +57,27 @@ function Projects() {
                 // demoLink="https://github.com/DharmikVaja/car-evolution-rent"
               />
             </Col>
+            <Col md={4} className="project-card">
+              <ProjectCard
+                imgPath={todolist}
+                isBlog={false}
+                title="todo list"
+                description="Todo list which includes tasks to be added, remove and update. also can search tasks list."
+                ghLink="https://github.com/DharmikVaja/react-todo-list"
+                demoLink=""
+              />
+            </Col>
 
-            {/* <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={suicide}
-              isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink=""
-              demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
-            />
-          </Col> */}
+            <Col md={4} className="project-card">
+              <ProjectCard
+                imgPath={real_estate}
+                isBlog={false}
+                title="RealEstate Website"
+                description="Regenics site to find the real estate at the best price"
+                ghLink=""
+                demoLink=""
+              />
+            </Col>
 
             {/* <Col md={4} className="project-card">
             <ProjectCard

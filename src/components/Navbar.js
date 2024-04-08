@@ -18,11 +18,22 @@ function NavBar({ aboutRef }) {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
 
-  const scrollToAbout = () => {
-    aboutRef.current.scrollIntoView({ behavior: "smooth" });
-    updateExpanded(false);
-  };
+  // const handleScroll = () => {
+  //   const scrollToAbout = () => {
+  //     aboutRef.current.scrollIntoView({ behavior: "smooth" });
+  //     updateExpanded(false);
+  //   };
+  // };
 
+  function scrollHandler() {
+    if (window.scrollY >= 20) {
+      updateNavbar(true);
+    } else {
+      updateNavbar(false);
+    }
+  }
+
+  window.addEventListener("scroll", scrollHandler);
   return (
     <Navbar
       expanded={expand}
@@ -55,13 +66,12 @@ function NavBar({ aboutRef }) {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                // to="/about"
-                onClick={() => scrollToAbout}
+                to="/about"
+                onClick={() => updateExpanded(false)}
               >
                 <AiOutlineUser style={{ marginBottom: "2px" }} /> About
               </Nav.Link>
             </Nav.Item>
-
             <Nav.Item>
               <Nav.Link
                 as={Link}

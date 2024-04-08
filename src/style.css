@@ -153,8 +153,9 @@ button:focus {
 }
 
 .logo {
-  height: 1.4em !important;
-  width: 2.5em !important;
+  height: 2.7em !important;
+  /* width: 2em !important; */
+  width: auto;
 }
 
 .navbar-nav .nav-link {
@@ -737,11 +738,23 @@ button:focus {
 }
 
 .fork-btn-inner:hover {
-  transform: translateY(-2px) !important;
+  transform: translateY(-1px) !important;
   background-color: #a24dd386 !important;
   border-color: #a24dd386 !important;
 }
 
 .fork-btn-inner::after {
   display: none !important;
+}
+
+.hire_btn {
+
+  line-height: 1.4em;
+  background-color: #934cce5e !important;
+  border: 1px solid transparent;
+  color: white !important;
+  padding: 0.5rem 1.1rem;
+  vertical-align: middle;
+  border-radius: 10px;
+  text-align: center;
 }
