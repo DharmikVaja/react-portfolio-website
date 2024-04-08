@@ -1,14 +1,19 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../Assets/Images/home-main.svg";
 import Particle from "../Particle";
-import Home2 from "./Home2";
 import Type from "./Type";
+import Tilt from "react-parallax-tilt";
 import About from "../About/About";
+import FindMeOn from "../FindMeOn/FindMeOn";
+import NavBar from "../Navbar";
 
 function Home() {
+  const aboutRef = useRef(null);
+
   return (
     <>
+      <NavBar aboutRef={aboutRef} />
       <section>
         <Container fluid className="home-section" id="home">
           <Particle />
@@ -22,26 +27,28 @@ function Home() {
                   </span>
                 </h1>
                 <h1 className="heading-name">
-                  I'm
-                  <strong className="main-name"> Dharmik Vaja</strong> & Myself
+                  Myself
+                  <strong className="main-name"> Dharmik Vaja </strong>& I'm...
                 </h1>
                 <div style={{ padding: 50, textAlign: "left" }}>
                   <Type />
                 </div>
               </Col>
               <Col md={5} style={{ paddingBottom: 20 }}>
-                <img
-                  src={homeLogo}
-                  alt="home pic"
-                  className="img-fluid"
-                  style={{ maxHeight: "450px" }}
-                />
+                <Tilt>
+                  <img
+                    src={homeLogo}
+                    alt="home pic"
+                    className="img-fluid"
+                    style={{ maxHeight: "450px" }}
+                  />
+                </Tilt>
               </Col>
             </Row>
           </Container>
         </Container>
-        <Home2 />
-        {/* <About /> */}
+        <About ref={aboutRef} />
+        <FindMeOn />
       </section>
     </>
   );

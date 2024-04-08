@@ -21,7 +21,7 @@ function Footer() {
         </Col>
         <Col md="4" className="footer-body">
           <ul className="footer-icons">
-            <li className="social-icons">
+            <li className="social-icons ">
               <a
                 href="https://github.com/DharmikVaja"
                 style={{ color: "white" }}
@@ -31,7 +31,7 @@ function Footer() {
                 <AiFillGithub />
               </a>
             </li>
-         
+
             <li className="social-icons">
               <a
                 href="https://www.linkedin.com/in/dharmik-vaja-921899260/"

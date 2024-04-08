@@ -316,7 +316,7 @@ button:focus {
 
 .myAvtar {
   justify-content: center !important;
-  padding-top: 9em !important;
+  padding: 3em 0em !important;
 }
 
 @media (max-width: 767px) {
@@ -326,24 +326,8 @@ button:focus {
   }
 }
 
-.home-about-section {
-  position: relative;
-  padding-bottom: 70px !important;
-  padding-top: 70px !important;
-}
 
-.home-about-description {
-  color: white !important;
-  padding-top: 100px !important;
-  padding-bottom: 20px !important;
-  text-align: center;
-}
 
-.home-about-body {
-  padding-top: 50px;
-  font-size: 1.2em !important;
-  text-align: left;
-}
 
 .home-about-social {
   text-align: center !important;
@@ -550,7 +534,7 @@ button:focus {
   color: white !important;
   font-size: 2.3em !important;
   font-weight: 500 !important;
-  padding-top: 10px !important;
+  padding-top: 20px !important;
 }
 
 /* --------- */
@@ -560,7 +544,7 @@ button:focus {
 .about-section {
   position: relative !important;
   padding-top: 150px !important;
-  padding-bottom: 30px !important;
+  padding-bottom: 60px !important;
   background-image: var(--section-background-color) !important;
   color: white !important;
 }

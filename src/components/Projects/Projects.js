@@ -8,64 +8,67 @@ import editor from "../../Assets/Projects/codeEditor.png";
 import chatify from "../../Assets/Projects/chatify.png";
 import suicide from "../../Assets/Projects/suicide.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
+import NavBar from "../Navbar";
 
 function Projects() {
   return (
-    <Container fluid className="project-section">
-      <Particle />
-      <Container>
-        <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
-        </h1>
-        <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
-        </p>
-        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={chatify}
-              isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink=""
-              demoLink="https://chatify-49.web.app/"
-            />
-          </Col>
+    <>
+      <NavBar />
+      <Container fluid className="project-section">
+        <Particle />
+        <Container>
+          <h1 className="project-heading">
+            My Recent <strong className="purple">Works </strong>
+          </h1>
+          <p style={{ color: "white" }}>
+            Here are a few projects I've worked on recently.
+          </p>
+          <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+            <Col md={4} className="project-card">
+              <ProjectCard
+                // imgPath={chatify}
+                isBlog={false}
+                title="todo list"
+                description="Todo list which includes tasks to be added, remove and update. also can search tasks list."
+                ghLink="https://github.com/DharmikVaja/react-todo-list"
+                demoLink=""
+              />
+            </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={bitsOfCode}
-              isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink=""
-              demoLink=""
-            />
-          </Col>
+            <Col md={4} className="project-card">
+              <ProjectCard
+                // imgPath={bitsOfCode}
+                isBlog={false}
+                title="National Olympiad foundation website"
+                description="The project is based on the olympiad exam held nationally, where student can create account, login and get access to buy books and can give the demo test for scoring good marks in upcoming test exams"
+                ghLink="https://github.com/DharmikVaja/NOF-React-Project"
+                demoLink=""
+              />
+            </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={editor}
-              isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink=""
-              demoLink=""
-            />
-          </Col>
+            <Col md={4} className="project-card">
+              <ProjectCard
+                // imgPath={editor}
+                isBlog={false}
+                title="BookESell website"
+                description="Online books selling website created with different categories of logging in as buyer, seller and admin. who have rights to upload, buy or sell the books accordingly, books details finds and updates are possible here."
+                ghLink=""
+                demoLink=""
+              />
+            </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={leaf}
-              isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink=""
-              demoLink="https://plant49-ai.herokuapp.com/"
-            />
-          </Col>
+            <Col md={4} className="project-card">
+              <ProjectCard
+                // imgPath={leaf}
+                isBlog={false}
+                title="Car-Evolution"
+                description="Car rental website ui showcasing the power and versatility of modern web technologies, is an innovative project aimed at revolutionizing the car rental industry, the project is as a learning initiative in UI design with ReactJS,"
+                ghLink=""
+                // demoLink="https://github.com/DharmikVaja/car-evolution-rent"
+              />
+            </Col>
 
-          <Col md={4} className="project-card">
+            {/* <Col md={4} className="project-card">
             <ProjectCard
               imgPath={suicide}
               isBlog={false}
@@ -74,9 +77,9 @@ function Projects() {
               ghLink=""
               demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
             />
-          </Col>
+          </Col> */}
 
-          <Col md={4} className="project-card">
+            {/* <Col md={4} className="project-card">
             <ProjectCard
               imgPath={emotion}
               isBlog={false}
@@ -86,10 +89,11 @@ function Projects() {
               ghLink=""
               demoLink=""
             />
-          </Col>
-        </Row>
+          </Col> */}
+          </Row>
+        </Container>
       </Container>
-    </Container>
+    </>
   );
 }
 
