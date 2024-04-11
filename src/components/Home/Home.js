@@ -1,14 +1,7 @@
 import React, { useRef } from "react";
-// import { Container, Row, Col } from "react-bootstrap";
-import homeLogo from "../../Assets/Images/home-main.svg";
-import homeGif from "../../Assets/Images/68747470733a2f2f63646e2e6472696262626c652e636f6d2f75736572732f3733303730332f73637265656e73686f74732f363538313234332f6176656e746f2e676966.gif";
-import homeGif1 from "../../Assets/Images/home_gif.gif";
-// import Programmer from "../../Assets/Images/marginalia-a-person-sitting-in-front-of-a-computer-screen.gif";
-import undraw from "../../Assets/Images/undraw_Programming_re_kg9v.png";
-import bgremoveprog from "../../Assets/Images/bg_removed_programmer.gif"
+import myPic1 from "../../Assets/Images/mypic_portfolio_blur.jpg";
 import Particle from "../Particle";
 import Type from "./Type";
-import Tilt from "react-parallax-tilt";
 import About from "../About/About";
 import FindMeOn from "../FindMeOn/FindMeOn";
 import NavBar from "../Navbar";
@@ -21,7 +14,6 @@ function Home() {
     <>
       <ScrollToTop />
       <NavBar aboutRef={aboutRef} />
-
       <div className="container-fluid home-section" id="home">
         <Particle />
         <div className="container home-content">
@@ -41,20 +33,25 @@ function Home() {
                 <Type />
               </div>
             </div>
-            <div className="col-md-5" style={{ paddingBottom: "20px" }}>
+            <div className="col-md-5 d-flex justify-content-center pt-3" style={{ paddingBottom: "20px" }}>
               <div data-tilt>
                 <img
-                  src={homeLogo}
+                  src={myPic1}
                   alt="home pic"
-                  className="img-fluid "
-                  style={{ maxHeight: "550px" }}
+                  className="img img-fluid myHomePic"
+                  style={{
+                    maxHeight: "500px",
+                    borderRadius: "400px",
+                    zIndex: "10",
+                    opacity: "0.8",
+                    border: "2px solid white",
+                  }}
                 />
               </div>
             </div>
           </div>
         </div>
       </div>
-
       <About ref={aboutRef} />
       <FindMeOn />
     </>

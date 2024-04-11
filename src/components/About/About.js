@@ -26,7 +26,7 @@ const About = forwardRef((props, ref) => {
                   paddingBottom: "50px",
                 }}
               >
-                <h1 style={{ fontSize: "2.8em", paddingBottom: "20px" }}>
+                <h1 style={{ fontSize: "2.3em", paddingBottom: "20px"  }} className="about_h1">
                   #Know<strong className="purple">Who</strong>I'm
                 </h1>
                 <Aboutcard />

@@ -43,9 +43,6 @@ button:focus {
   height: 100vh;
 }
 
-
-
-
 /* --------- */
 /*Scrollbar   */
 /* --------- */
@@ -321,6 +318,16 @@ button:focus {
 .myAvtar {
   justify-content: center !important;
   padding: 3em 0em !important;
+}
+
+@media screen and (max-width: 768px) {
+
+  .myHomePic {
+    min-height: 200px !important;
+  }
+  .about_h1{
+    /* font-size: 20px; */
+  }
 }
 
 @media (max-width: 767px) {

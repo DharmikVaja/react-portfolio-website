@@ -53,8 +53,8 @@ function Projects() {
                 isBlog={false}
                 title="Car-Evolution"
                 description="Car rental website's ui showcasing the power and versatility of modern web technologies, is an innovative project aimed at revolutionizing the car rental industry, the project is as a learning initiative in UI design with ReactJS,"
-                ghLink=""
-                // demoLink="https://github.com/DharmikVaja/car-evolution-rent"
+                ghLink="https://github.com/DharmikVaja/car-evolution-rent"
+                demoLink="https://dv-car-evolution.netlify.app/"
               />
             </Col>
             <Col md={4} className="project-card">
@@ -78,18 +78,6 @@ function Projects() {
                 demoLink=""
               />
             </Col>
-
-            {/* <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink=""
-              demoLink=""
-            />
-          </Col> */}
           </Row>
         </Container>
       </Container>
