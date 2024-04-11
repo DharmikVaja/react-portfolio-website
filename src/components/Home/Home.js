@@ -3,11 +3,9 @@ import React, { useRef } from "react";
 import homeLogo from "../../Assets/Images/home-main.svg";
 import homeGif from "../../Assets/Images/68747470733a2f2f63646e2e6472696262626c652e636f6d2f75736572732f3733303730332f73637265656e73686f74732f363538313234332f6176656e746f2e676966.gif";
 import homeGif1 from "../../Assets/Images/home_gif.gif";
-import Programmer from "../../Assets/Images/marginalia-a-person-sitting-in-front-of-a-computer-screen.gif";
-import Programmer1 from "../../Assets/Images/coworking-male-programmer-writing-program-code.gif";
-import Programmer2 from "../../Assets/Images/juicy-man-programmer-writing-code-and-make-web-design-on-a-pc.gif";
-import Programmer3 from "../../Assets/Images/95116-coder.gif";
-
+// import Programmer from "../../Assets/Images/marginalia-a-person-sitting-in-front-of-a-computer-screen.gif";
+import undraw from "../../Assets/Images/undraw_Programming_re_kg9v.png";
+import bgremoveprog from "../../Assets/Images/bg_removed_programmer.gif"
 import Particle from "../Particle";
 import Type from "./Type";
 import Tilt from "react-parallax-tilt";

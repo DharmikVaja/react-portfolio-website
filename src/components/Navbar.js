@@ -97,7 +97,8 @@ function NavBar({ aboutRef }) {
 
             <Nav.Item className="fork-btn">
               <Button
-                target="_blank"
+                href="mailto:vajadharmikk@gmail.com"
+                title="Connect me via Mail!"
                 className="fork-btn-inner d-flex flex-column align-items-center"
               >
                 <div className="d-flex flex-row">
@@ -108,6 +109,7 @@ function NavBar({ aboutRef }) {
                 </div>
               </Button>
             </Nav.Item>
+            
           </Nav>
         </Navbar.Collapse>
       </Container>

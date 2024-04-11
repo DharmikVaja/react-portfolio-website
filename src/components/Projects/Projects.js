@@ -32,7 +32,7 @@ function Projects() {
                 title="National Olympiad foundation website"
                 description="The project is based on the olympiad exam held nationally, where student can create account, login and get access to buy books and can give the demo test for scoring good marks in upcoming test exams"
                 ghLink="https://github.com/DharmikVaja/NOF-React-Project"
-                demoLink=""
+                demoLink="https://dv-nof-india.netlify.app/"
               />
             </Col>
 
@@ -42,7 +42,7 @@ function Projects() {
                 isBlog={false}
                 title="BookESell website"
                 description="Online books selling website created with different categories of logging in as buyer, seller and admin. who have rights to upload, buy or sell the books accordingly, books details finds and updates are possible here."
-                ghLink=""
+                ghLink="https://github.com/DharmikVaja/EBookSell-App"
                 demoLink=""
               />
             </Col>
@@ -52,7 +52,7 @@ function Projects() {
                 imgPath={carEvol}
                 isBlog={false}
                 title="Car-Evolution"
-                description="Car rental website ui showcasing the power and versatility of modern web technologies, is an innovative project aimed at revolutionizing the car rental industry, the project is as a learning initiative in UI design with ReactJS,"
+                description="Car rental website's ui showcasing the power and versatility of modern web technologies, is an innovative project aimed at revolutionizing the car rental industry, the project is as a learning initiative in UI design with ReactJS,"
                 ghLink=""
                 // demoLink="https://github.com/DharmikVaja/car-evolution-rent"
               />
@@ -64,7 +64,7 @@ function Projects() {
                 title="todo list"
                 description="Todo list which includes tasks to be added, remove and update. also can search tasks list."
                 ghLink="https://github.com/DharmikVaja/react-todo-list"
-                demoLink=""
+                demoLink="https://dharmikvaja-todoapp.netlify.app/"
               />
             </Col>
 
@@ -73,7 +73,7 @@ function Projects() {
                 imgPath={real_estate}
                 isBlog={false}
                 title="RealEstate Website"
-                description="Regenics site to find the real estate at the best price"
+                description="Regenics site to find the real estate at the best price.the project is cerated while learning UI design with ReactJS"
                 ghLink=""
                 demoLink=""
               />
