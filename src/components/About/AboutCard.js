@@ -10,21 +10,25 @@ function AboutCard() {
           <h1 style={{ fontSize: "1.1em" }} className="py-2 text-start">
             LET ME <span className="purple"> INTRODUCE </span> MYSELF...
           </h1>
-          <div style={{ textAlign: "justify" }} className="py-2">
+          <div style={{ textAlign: "justify" }} className="py-3">
             Hi Everyone, I am <span className="purple">Dharmik Vaja </span>
             from <span className="purple"> Surat, India.</span>
-            <div />
             <div>
               I fell in love with programming & have at least learnt something,
-              I think… 🤷‍♂️
+              I think… 🤷‍♂️,
             </div>
-            I am currently working as an Intern in{" "}
-            <span className="purple">Web developer</span> at{" "}
-            <span className="purple">Kurm Infotech.</span>
-            <div />I have completed Bachelors of
+            <div className="py-3">
+              I'm currently as {""}
+              <span className="purple">Web developer Intern</span> at{" "}
+              <span className="purple">Kurm Infotech </span>since Jan 2024
+            </div>
+            <div />
+            I've completed Bachelors of
             <span className="purple"> IT Engineering </span> (B.E/ B.Tech)
-            degree at Government Engineering College (GEC) Bhavnagar. Apart from
-            coding, some other activities that I love to do!
+            degree from Government Engineering College (GEC) Bhavnagar.
+            <div className="py-3">
+              Apart from coding, some other activities that I love to do!
+            </div>
             <div />
           </div>
           <ul>

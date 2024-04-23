@@ -7,13 +7,16 @@ import FindMeOn from "../FindMeOn/FindMeOn";
 import NavBar from "../Navbar";
 import ScrollToTop from "../ScrollToTop/ScrollToTop";
 
-function Home() {
+function Home(props) {
   const aboutRef = useRef(null);
 
+  const scrollToAbout = () => {
+    aboutRef.current.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <>
       <ScrollToTop />
-      <NavBar aboutRef={aboutRef} />
+      <NavBar scrollToAbout={scrollToAbout} />
       <div className="container-fluid home-section" id="home">
         <Particle />
         <div className="container home-content">
@@ -33,7 +36,10 @@ function Home() {
                 <Type />
               </div>
             </div>
-            <div className="col-md-5 d-flex justify-content-center pt-3" style={{ paddingBottom: "20px" }}>
+            <div
+              className="col-md-5 d-flex justify-content-center pt-3"
+              style={{ paddingBottom: "20px" }}
+            >
               <div data-tilt>
                 <img
                   src={myPic1}

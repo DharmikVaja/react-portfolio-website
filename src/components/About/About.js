@@ -12,9 +12,9 @@ import ScrollToTop from "../ScrollToTop/ScrollToTop";
 const About = forwardRef((props, ref) => {
   return (
     <>
-      <div ref={ref}>
+      <div ref={ref} name="about">
         <NavBar />
-        <ScrollToTop/>
+        <ScrollToTop />
         <Container fluid className="about-section">
           <Particle />
           <Container>
@@ -26,7 +26,10 @@ const About = forwardRef((props, ref) => {
                   paddingBottom: "50px",
                 }}
               >
-                <h1 style={{ fontSize: "2.3em", paddingBottom: "20px"  }} className="about_h1">
+                <h1
+                  style={{ fontSize: "2.3em", paddingBottom: "20px" }}
+                  className="about_h1"
+                >
                   #Know<strong className="purple">Who</strong>I'm
                 </h1>
                 <Aboutcard />

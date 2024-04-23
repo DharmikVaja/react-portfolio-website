@@ -13,7 +13,7 @@ import {
 } from "react-icons/ai";
 import { CgFileDocument } from "react-icons/cg";
 
-function NavBar({ aboutRef }) {
+function NavBar(props) {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
 
@@ -32,11 +32,10 @@ function NavBar({ aboutRef }) {
       window.removeEventListener("scroll", scrollHandler);
     };
   }, []);
-
-  // function scrollToAbout() {
+  // const scrollToAbout = () => {
   //   aboutRef.current.scrollIntoView({ behavior: "smooth" });
   //   updateExpanded(false);
-  // }
+  // };
 
   return (
     <Navbar
@@ -75,13 +74,14 @@ function NavBar({ aboutRef }) {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/about"
                 onClick={() => {
-                  // scrollToAbout();
                   updateExpanded(false);
                 }}
+                to="/about"
+                // onClick={props.scrollToAbout}
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> About
+                <AiOutlineUser style={{ marginBottom: "2px" }} />
+                About
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
