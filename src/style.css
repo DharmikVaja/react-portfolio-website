@@ -316,6 +316,7 @@ button:focus {
 }
 
 .myAvtar {
+
   justify-content: center !important;
   padding: 3em 0em !important;
 }
@@ -325,7 +326,8 @@ button:focus {
   .myHomePic {
     min-height: 200px !important;
   }
-  .about_h1{
+
+  .about_h1 {
     /* font-size: 20px; */
   }
 }

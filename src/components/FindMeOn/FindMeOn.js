@@ -18,7 +18,7 @@ const FindMeOn = () => {
           <Col md={12} className="home-about-social">
             <div className="myAvtar">
               <Tilt>
-                <img src={myImg} className="img-fluid" alt="avatar" />
+                <img src={myImg} className="img-fluid avatar_img" alt="avatar" />
               </Tilt>
             </div>
             <h2 className="">
@@ -38,7 +38,7 @@ const FindMeOn = () => {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/dharmik-vaja-921899260/"
+                  href="https://www.linkedin.com/in/dharmik-vaja/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"

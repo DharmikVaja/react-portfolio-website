@@ -106,7 +106,7 @@ function NavBar(props) {
                   updateExpanded(false);
                 }}
               >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
+                <CgFileDocument style={{ marginBottom: "2px" }} />My Resume
               </Nav.Link>
             </Nav.Item>
             <Nav.Item className="fork-btn">

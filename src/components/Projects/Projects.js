@@ -9,6 +9,8 @@ import BookESell from "../../Assets/Projects/BookEsell.png";
 import carEvol from "../../Assets/Projects/car-evolution.png";
 import real_estate from "../../Assets/Projects/real-estate.png";
 import ScrollToTop from "../ScrollToTop/ScrollToTop";
+import psdGen from "../../Assets/Projects/psd generator.png";
+
 
 function Projects() {
   return (
@@ -46,17 +48,17 @@ function Projects() {
                 demoLink=""
               />
             </Col>
-
             <Col md={4} className="project-card">
               <ProjectCard
-                imgPath={carEvol}
+                imgPath={psdGen}
                 isBlog={false}
-                title="Car-Evolution"
-                description="Car rental website's ui showcasing the power and versatility of modern web technologies, is an innovative project aimed at revolutionizing the car rental industry, the project is as a learning initiative in UI design with ReactJS,"
-                ghLink="https://github.com/DharmikVaja/car-evolution-rent"
-                demoLink="https://dv-car-evolution.netlify.app/"
+                title="Password Generator"
+                description="Password generator using Reactjs by which we can generate the password with our type of need, with letters, numbers, symbols, etc. and can copy it for using further."
+                ghLink="https://github.com/DharmikVaja/password-generator"
+                demoLink="https://dv-password-generator.netlify.app/"
               />
             </Col>
+
             <Col md={4} className="project-card">
               <ProjectCard
                 imgPath={todolist}
@@ -67,13 +69,23 @@ function Projects() {
                 demoLink="https://dharmikvaja-todoapp.netlify.app/"
               />
             </Col>
+            <Col md={4} className="project-card">
+              <ProjectCard
+                imgPath={carEvol}
+                isBlog={false}
+                title="Car-Evolution"
+                description="UI of Car rental website showcasing the power and versatility of modern web technologies, is an innovative project aimed at revolutionizing the car rental industry, the project is as a learning initiative in UI design with ReactJS,"
+                ghLink="https://github.com/DharmikVaja/car-evolution-rent"
+                demoLink="https://dv-car-evolution.netlify.app/"
+              />
+            </Col>
 
             <Col md={4} className="project-card">
               <ProjectCard
                 imgPath={real_estate}
                 isBlog={false}
                 title="RealEstate Website"
-                description="Regenics site to find the real estate at the best price.the project is cerated while learning UI design with ReactJS"
+                description="practice UI with Regenics site to find the real estate at the best price.the project is cerated while learning UI design with ReactJS"
                 ghLink=""
                 demoLink=""
               />

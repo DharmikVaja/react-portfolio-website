@@ -23,19 +23,18 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       updateLoad(false);
-    }, 1200);
-
+    }, 1000);
     return () => clearTimeout(timer);
   }, []);
 
   return (
     <Router>
+      <div className="App">
       <Preloader load={load} />
-      <div className="App" id={load ? "no-scroll" : "scroll"}>
         <NavBar aboutRef={aboutRef} />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About ref={aboutRef}/>} />
+          <Route path="/about" element={<About ref={aboutRef} />} />
           <Route path="/project" element={<Projects />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="*" element={<Navigate to="/" />} />

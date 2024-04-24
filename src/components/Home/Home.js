@@ -6,6 +6,7 @@ import About from "../About/About";
 import FindMeOn from "../FindMeOn/FindMeOn";
 import NavBar from "../Navbar";
 import ScrollToTop from "../ScrollToTop/ScrollToTop";
+import AboutCard from "../About/AboutCard";
 
 function Home(props) {
   const aboutRef = useRef(null);
@@ -50,7 +51,7 @@ function Home(props) {
                     borderRadius: "400px",
                     zIndex: "10",
                     opacity: "0.8",
-                    border: "2px solid white",
+                    border: "2px solid #c770f0",
                   }}
                 />
               </div>
@@ -58,6 +59,7 @@ function Home(props) {
           </div>
         </div>
       </div>
+      
       <About ref={aboutRef} />
       <FindMeOn />
     </>
